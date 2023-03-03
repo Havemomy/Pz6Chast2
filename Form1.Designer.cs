@@ -73,6 +73,7 @@
             this.poisk.Name = "poisk";
             this.poisk.Size = new System.Drawing.Size(100, 20);
             this.poisk.TabIndex = 3;
+            this.poisk.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // filtr
             // 
@@ -81,6 +82,7 @@
             this.filtr.Name = "filtr";
             this.filtr.Size = new System.Drawing.Size(121, 21);
             this.filtr.TabIndex = 4;
+            this.filtr.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // sortirovka
             // 
@@ -90,6 +92,7 @@
             this.sortirovka.TabIndex = 5;
             this.sortirovka.Text = "Сортировка ";
             this.sortirovka.UseVisualStyleBackColor = true;
+            this.sortirovka.Click += new System.EventHandler(this.sortirovka_Click);
             // 
             // button1
             // 
@@ -99,6 +102,7 @@
             this.button1.TabIndex = 6;
             this.button1.Text = "Вывести \"+\"";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // sbros
             // 
@@ -108,6 +112,7 @@
             this.sbros.TabIndex = 7;
             this.sbros.Text = "Сброс";
             this.sbros.UseVisualStyleBackColor = true;
+            this.sbros.Click += new System.EventHandler(this.sbroc_Click);
             // 
             // WeatherForm
             // 
